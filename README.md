@@ -9,3 +9,14 @@ A collect of libraries for SLAM, for my own reference
 # papers
 [A paper that compares the four](https://lamor.fer.hr/images/50036607/2021-ajuric-comparison-mipro.pdf)
 [The SE-Sync paper](https://journals.sagepub.com/doi/full/10.1177/0278364918784361)
+
+# Comments
+1. Special attention should be paid to the SE-Sync paper. The analysis of the paper reveals some very
+fascinating facts about StherLAM problems:
+    - The graph optimization problem has an equivalent representation of Rotation Only Optimization.
+    - The Rotation Only Optimization problem can be relaxed to a Convex Semidefinite problem if replacing the SO(n) group by the  O(n) group.
+    - The Convec semidefinite problem can be solved by "go up" the Remanian staircase, with upper "stair" giving a better approximation of the Convex semidifinite problem.
+    - If noise is not very large, global minimum can be found. Otherwise, a suboptimal solution can be found by projecting back to the feasible space.
+The beauty of SE-Sync is that has profound geometric ituition. 
+Not sure whether the Truncated Newton Method used in the paper would cause some subtle issues.
+
