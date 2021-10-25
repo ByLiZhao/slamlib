@@ -22,6 +22,7 @@ fascinating facts about StherLAM problems:
     - If noise is not very large, global minimum can be found. Otherwise, a suboptimal solution can be found by projecting back to the feasible space.
 The beauty of SE-Sync is that has profound geometric ituition. 
 Not sure whether the Truncated Newton Method used in the paper would cause some subtle issues.
+It is also not clear the "Riemannian optimization" by [Boumal](https://hal.archives-ouvertes.fr/hal-01213337/document) has some unkown issues.
 
 # Outliners and large-residual problems
 Optimization-based SLAM algorithms generally behave well when the resdual of the objective function is small. 
