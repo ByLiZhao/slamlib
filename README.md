@@ -23,3 +23,13 @@ fascinating facts about StherLAM problems:
 The beauty of SE-Sync is that has profound geometric ituition. 
 Not sure whether the Truncated Newton Method used in the paper would cause some subtle issues.
 
+# Outliners and large-residual problems
+Optimization-based SLAM algorithms generally behave well when the resdual of the objective function is small. 
+A few outliners can "poison" a small-residual optimization problem into a large-residual problem.
+There are two related problems:
+1. Before actually solving a SLAM problem, it is hard to tell beforehand whether it is a small-residual problem or not. 
+But the effectiveness of many algorithms rely on the fact that residuals are small. 
+2. Even if we are lucky and get the global minimum of the optimization problem, for example, through a brutal-force approach,
+The result is usually not what we want. Because a few outliners can scew the resulted map. What we really need is actually a method
+to filter out those outliners. 
+
