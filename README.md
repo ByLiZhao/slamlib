@@ -8,7 +8,9 @@ A collect of libraries for SLAM, for my own reference
 
 # papers
 [A paper that compares the four](https://lamor.fer.hr/images/50036607/2021-ajuric-comparison-mipro.pdf)
-[The SE-Sync paper](https://journals.sagepub.com/doi/full/10.1177/0278364918784361)
+[The SE-Sync paper](https://journals.sagepub.com/doi/full/10.1177/0278364918784361).
+An oversimplied interpretation of main conclusions of this paper is that GTSAM and SE-Sync is generally at least not worse than alternatives. 
+Considering that SE-Sync is not as mature as GTSAM, STSAM could be used as a starting point if one needs to experiment with SLAM.
 
 # Comments
 1. Special attention should be paid to the SE-Sync paper. The analysis of the paper reveals some very
