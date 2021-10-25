@@ -8,3 +8,4 @@ A collect of libraries for SLAM, for my own reference
 
 # papers
 [A paper that compares the four](https://lamor.fer.hr/images/50036607/2021-ajuric-comparison-mipro.pdf)
+[The SE-Sync paper](https://journals.sagepub.com/doi/full/10.1177/0278364918784361)
