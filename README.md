@@ -13,8 +13,7 @@ An oversimplied interpretation of main conclusions of this paper is that GTSAM a
 Considering that SE-Sync is not as mature as GTSAM, STSAM could be used as a starting point if one needs to experiment with SLAM.
 2. [Factor graphs and gtsam a hands-on introduction](https://www.cc.gatech.edu/~dellaert/FrankDellaert/Frank_Dellaert/Entries/2013/5/10_Factor_Graphs_Tutorial_files/gtsam.pdf)
 GTSAM incorporates the work of [iSAM2](https://www.cs.cmu.edu/~kaess/pub/Kaess12ijrr.pdf), which is designed to solve graph optimization problem while the graph is growing, 'i' in "iSAM" stands for "incremental". The resulted nonlinear least square problem is solved using generic solvers with sparse block matrix computation.
-4. [The g2o paper](http://europa.informatik.uni-freiburg.de/files/kuemmerle11icra.pdf) g2o is like GTSAM,it also model the problem domain with a graph model. Its distincitve feature
-is that it uses the square-add operator ⊞. The square-add operator is used where a generic optimization solvers uses "+" to generate a one-step update of the estimated value.
+4. [The g2o paper](http://europa.informatik.uni-freiburg.de/files/kuemmerle11icra.pdf) g2o is like GTSAM,it also model the problem domain with a graph model. It is the first SLAM lib that uses the square-add operator ⊞. The square-add operator is used where a generic optimization solvers uses "+" to generate a one-step update of the estimated value.
 5. ["Least Squares Optimization: From Theory to Pratice" by Giorgio Grisetti, et al.](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwink56VzefzAhVayYsBHf-NAq0QFnoECBUQAQ&url=https%3A%2F%2Fres.mdpi.com%2Fd_attachment%2Frobotics%2Frobotics-09-00051%2Farticle_deploy%2Frobotics-09-00051-v2.pdf&usg=AOvVaw2NDJ5w4OH4mi8rOI1Wql9F),
 an interesting paper that tries to design a module-based composable and configurable unified interface to the optimization problem.
 # Comments
