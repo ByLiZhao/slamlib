@@ -29,6 +29,7 @@ Not sure whether the Truncated Newton Method used in the paper would cause some 
 It is also not clear the "Riemannian optimization" by [Boumal](https://hal.archives-ouvertes.fr/hal-01213337/document) has some unkown issues.
 2. Among the four solvers, Ceres is more of a general-purpose solver. It can solve nonlinear least square problems with box constraints, or general
 unconstrained nonlinear optimization problem. Ceres is very good at Automatic Differentiation. In fact, g2o uses Ceres's AD code. 
+3. GTSAM has its own "Expression" based Automatic Differentiation framework. The authors of GTSAM state that it is faster than that of Ceres.
 
 # Outliners and large-residual problems
 Optimization-based SLAM algorithms generally behave well when the resdual of the objective function is small. 
