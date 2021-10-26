@@ -44,4 +44,5 @@ to filter out those outliners.
 instead of solving the original nonlinear least square problem, we can solve a so-called Iteratively Reweighted Least Square problem.
 The idea behind it is to use an objective function that is less-sensitive to outliners while converging to the same optimizer under
 some conditions. Though it is possible that the algorithm is trapped into newly introduced local minimum because of reweighting.
+4. Outliner detection method such as [RANSAC] is too expensive to be practical.
 
