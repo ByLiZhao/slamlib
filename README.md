@@ -15,6 +15,8 @@ Considering that SE-Sync is not as mature as GTSAM, STSAM could be used as a sta
 GTSAM incorporates the work of [iSAM2](https://www.cs.cmu.edu/~kaess/pub/Kaess12ijrr.pdf), which is designed to solve graph optimization problem while the graph is growing, 'i' in "iSAM" stands for "incremental". The resulted nonlinear least square problem is solved using generic solvers with sparse block matrix computation.
 4. [The g2o paper](http://europa.informatik.uni-freiburg.de/files/kuemmerle11icra.pdf) g2o is like GTSAM, but it is more suitable fo run in batch mode. Its distincitve feature
 is that it uses the square-add operator ⊞. The square-add operator is used where a generic optimization solvers uses "+" to generate a one-step update of the estimated value.
+5. ["Least Squares Optimization: From Theory to Pratice" by Giorgio Grisetti, et al.  ](file:///tmp/mozilla_johnzli0/robotics-09-00051-v2.pdf)
+An interesting paper that tries to design a module-based composable and configurable unified interface to the optimization problem.
 # Comments
 1. Special attention should be paid to the SE-Sync paper. The analysis of the paper reveals some very
 fascinating facts about StherLAM problems:
