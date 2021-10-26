@@ -39,5 +39,9 @@ There are two related problems:
 But the effectiveness of many algorithms rely on the fact that residuals are small. 
 2. Even if we are lucky and get the global minimum of the optimization problem, for example, through a brutal-force approach,
 The result is usually not what we want. Because a few outliners can scew the resulted map. What we really need is actually a method
-to filter out those outliners. 
+to filter out those outliners.
+3. [Robust estimators](https://en.wikipedia.org/wiki/Robust_statistics) can partially solve the outliner problem, for example,
+instead of solving the original nonlinear least square problem, we can solve a so-called Iteratively Reweighted Least Square problem.
+The idea behind it is to use an objective function that is less-sensitive to outliners while converging to the same optimizer under
+some conditions. Though it is possible that the algorithm is trapped into newly introduced local minimum because of reweighting.
 
