@@ -12,6 +12,7 @@ A collect of libraries for SLAM, for my own reference
 An oversimplied interpretation of main conclusions of this paper is that GTSAM and SE-Sync is generally at least not worse than alternatives. 
 Considering that SE-Sync is not as mature as GTSAM, STSAM could be used as a starting point if one needs to experiment with SLAM.
 2. [Factor graphs and gtsam a hands-on introduction](https://www.cc.gatech.edu/~dellaert/FrankDellaert/Frank_Dellaert/Entries/2013/5/10_Factor_Graphs_Tutorial_files/gtsam.pdf)
+3. [The g2o paper](http://europa.informatik.uni-freiburg.de/files/kuemmerle11icra.pdf)
 
 # Comments
 1. Special attention should be paid to the SE-Sync paper. The analysis of the paper reveals some very
